@@ -4,11 +4,16 @@
 		<meta charset="utf-8">
 		<title>VR Experiment</title>
 		<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-	<style>
+		<style>
 			body { margin: 0; }
 		</style>
 	</head>
 	<body>
-	<script type="module" src="./xr.js"></script>
+		<video crossorigin='anonymous' id="video" autoplay=true controls="" preload="none">
+				  <source id="mp4" src="test.mp4" type="video/mp4">
+				  <p>Your user agent does not support the HTML5 Video element.</p>
+				</video>
+
+		<script type="module" src="./xr.js"></script>
 	</body>
 </html>
