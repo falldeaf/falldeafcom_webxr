@@ -25,7 +25,16 @@ scene.add( light );
 var vsize = 1;
 const geometry1 = new THREE.PlaneBufferGeometry( 4*vsize, 3*vsize, 20, 1 );
 const material1 = new THREE.MeshBasicMaterial({color: 0x9e49af, side: THREE.DoubleSide});
-const video = document.getElementById('video');
+const video = document.createElement('video');
+video.autoplay = true;
+//video.hidden = true;
+video.muted = true;
+var src = document.createElement("source"); 
+src.type = "video/mp4";
+src.src = "test.mp4";
+video.appendChild(src);
+document.body.appendChild(video);
+
 const vcanvas = document.createElement('canvas');
 vcanvas.crossOrigin = "Anonymous";
 vcanvas.width = 640;
