@@ -9,7 +9,7 @@ var options = {
   cert: cert
 };
 
-const port = 8000;
+const port = 80;
 
 app = express()
 app.use(express.static('static'));
